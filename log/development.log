@@ -1,0 +1,3191 @@
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 21:32:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml___3954204763943836113_70125693701100 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:42)
+  Rendered locations/index.html.haml within layouts/application (18.2ms)
+Completed 200 OK in 350ms (Views: 339.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 21:32:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 21:32:37 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 21:32:37 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 21:32:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 21:32:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 21:32:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 21:32:38 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 21:32:38 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 21:32:38 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 21:32:38 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 21:32:38 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 21:32:38 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 21:32:38 -0700
+
+
+Started GET "/locations/radio" for 127.0.0.1 at 2015-10-25 21:32:41 -0700
+Processing by LocationsController#radio as HTML
+  Rendered locations/radio.html.haml within layouts/application (36.4ms)
+Completed 200 OK in 59ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 21:32:42 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 21:32:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 21:32:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 21:32:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 21:32:42 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 21:32:42 -0700
+
+
+Started POST "/locations/radio" for 127.0.0.1 at 2015-10-25 21:32:57 -0700
+
+ActionController::RoutingError (No route matches [POST] "/locations/radio"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.7ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (127.4ms)
+
+
+Started POST "/locations/radio" for 127.0.0.1 at 2015-10-25 21:33:39 -0700
+Processing by LocationsController#radio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "latitude"=>"31.825408", "longitude"=>"-116.59421", "radio"=>"1000", "commit"=>"Buscar"}
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/radio.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 12.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 21:33:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 21:33:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 21:33:39 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 21:33:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 21:33:39 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 21:33:39 -0700
+
+
+Started POST "/locations/radio" for 127.0.0.1 at 2015-10-25 21:33:56 -0700
+Processing by LocationsController#radio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "latitude"=>"31.825408", "longitude"=>"-116.59421", "radio"=>"2000", "commit"=>"Buscar"}
+  [1m[35mLocation Load (0.4ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/radio.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 21:33:57 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 21:33:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 21:33:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 21:33:57 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 21:33:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 21:33:57 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 21:37:02 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml___3954204763943836113_70125682415400 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:43)
+  Rendered locations/index.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 53ms (Views: 34.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 21:37:02 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 21:37:02 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 21:37:02 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 21:37:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 21:37:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 21:37:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 21:37:02 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 21:37:02 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 21:37:03 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 21:37:03 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 21:37:03 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 21:37:03 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 21:37:03 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 21:37:05 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1[0m
+Completed 500 Internal Server Error in 29ms
+
+NoMethodError (undefined method `latitude' for nil:NilClass):
+  app/controllers/locations_controller.rb:152:in `block in convex_hull'
+  app/controllers/locations_controller.rb:150:in `convex_hull'
+
+
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.0ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2015-10-25 21:38:20 -0700
+Processing by LocationsController#new as HTML
+  Rendered locations/new.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 21:38:20 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 21:38:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 21:38:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 21:38:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 21:38:20 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 21:38:20 -0700
+
+
+Started POST "/locations" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "location"=>{"latitude"=>"31.87385", "longitude"=>"-116.62773", "name"=>"alfredo_house", "description"=>""}, "commit"=>"Save Changes"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "locations" ("description", "latitude", "longitude", "name") VALUES (?, ?, ?, ?)[0m  [["description", ""], ["latitude", 31.87385], ["longitude", -116.62773], ["name", "alfredo_house"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 23ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml___3954204763943836113_70125682415400 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:43)
+  Rendered locations/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 21:38:56 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 21:38:58 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1
+  Rendered locations/convex_hull.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 8.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 21:38:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 21:38:58 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 21:38:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 21:38:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 21:38:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 21:38:58 -0700
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 21:59:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__3117281488156335849_70144781350400 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:43)
+  Rendered locations/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 315ms (Views: 304.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 21:59:57 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 21:59:57 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 21:59:57 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 21:59:57 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 21:59:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 21:59:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 21:59:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 21:59:57 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 21:59:57 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 21:59:58 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 21:59:58 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 21:59:58 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 21:59:58 -0700
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 22:59:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.haml within layouts/application (29.9ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (undefined local variable or method `locations_visited_path' for #<#<Class:0x007fc22399dd78>:0x007fc22399cc98>):
+    40: %p=link_to 'Create new location', new_location_path
+    41: %p=link_to 'Buscar lugares cercanos', radio_locations_path
+    42: %p=link_to 'Convex hull',convex_hull_locations_path
+    43: %p=link_to 'Find POIs visited', locations_visited_path
+    44: %p=link_to 'Delete all', destroy_all_locations_path, method: :get, confirm: 'Are you sure?'
+    45: 
+    46: = javascript_include_tag '/assets/maps/OpenLayers'
+  app/views/locations/index.html.haml:43:in `_app_views_locations_index_html_haml__184830752728796232_70235899687320'
+
+
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (54.6ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 23:01:23 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.5ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__184830752728796232_70235899687320 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:44)
+  Rendered locations/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 274ms (Views: 264.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 23:01:24 -0700
+
+
+Started GET "/locations/visited" for 127.0.0.1 at 2015-10-25 23:01:29 -0700
+Processing by LocationsController#visited as HTML
+  Rendered locations/visited.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:01:29 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:01:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:01:29 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:01:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:01:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:01:29 -0700
+
+
+Started POST "/locations/poivisited" for 127.0.0.1 at 2015-10-25 23:02:23 -0700
+Processing by LocationsController#poivisited as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc222b3f628 @tempfile=#<Tempfile:/var/folders/t6/86whp61x0td0_wv168y_94800000gn/T/RackMultipart20151025-6259-cbtvpv>, @original_filename="gps.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"gps.json\"\r\nContent-Type: application/json\r\n">, "commit"=>"Save changes"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `where?' for #<LocationsController:0x007fc223c14a70>):
+  app/controllers/locations_controller.rb:202:in `block in poivisited'
+  app/controllers/locations_controller.rb:198:in `each'
+  app/controllers/locations_controller.rb:198:in `poivisited'
+
+
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (75.3ms)
+
+
+Started POST "/locations/poivisited" for 127.0.0.1 at 2015-10-25 23:04:36 -0700
+Processing by LocationsController#poivisited as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc223e8fa98 @tempfile=#<Tempfile:/var/folders/t6/86whp61x0td0_wv168y_94800000gn/T/RackMultipart20151025-6259-1kdt78j>, @original_filename="gps.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"gps.json\"\r\nContent-Type: application/json\r\n">, "commit"=>"Save changes"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/poivisited.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 9.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:04:36 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:04:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:04:36 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:04:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:04:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:04:36 -0700
+
+
+Started POST "/locations/poivisited" for 127.0.0.1 at 2015-10-25 23:15:48 -0700
+Processing by LocationsController#poivisited as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc222bdede0 @tempfile=#<Tempfile:/var/folders/t6/86whp61x0td0_wv168y_94800000gn/T/RackMultipart20151025-6259-4m8wso>, @original_filename="gps.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"gps.json\"\r\nContent-Type: application/json\r\n">, "commit"=>"Save changes"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/poivisited.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:15:49 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:15:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:15:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:15:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:15:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:15:49 -0700
+
+
+Started POST "/locations/poivisited" for 127.0.0.1 at 2015-10-25 23:18:46 -0700
+Processing by LocationsController#poivisited as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc223bbee68 @tempfile=#<Tempfile:/var/folders/t6/86whp61x0td0_wv168y_94800000gn/T/RackMultipart20151025-6259-1brw2ic>, @original_filename="gps.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"gps.json\"\r\nContent-Type: application/json\r\n">, "commit"=>"Save changes"}
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/poivisited.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:18:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:18:46 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:18:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:18:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:18:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:18:46 -0700
+
+
+Started POST "/locations/poivisited" for 127.0.0.1 at 2015-10-25 23:19:34 -0700
+Processing by LocationsController#poivisited as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc22295c7e8 @tempfile=#<Tempfile:/var/folders/t6/86whp61x0td0_wv168y_94800000gn/T/RackMultipart20151025-6259-1ghtms7>, @original_filename="gps.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"gps.json\"\r\nContent-Type: application/json\r\n">, "commit"=>"Save changes"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/poivisited.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:19:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:19:34 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:19:34 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:19:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:19:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:19:34 -0700
+
+
+Started POST "/locations/poivisited" for 127.0.0.1 at 2015-10-25 23:19:50 -0700
+Processing by LocationsController#poivisited as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc222cac2b8 @tempfile=#<Tempfile:/var/folders/t6/86whp61x0td0_wv168y_94800000gn/T/RackMultipart20151025-6259-mfbvs5>, @original_filename="gps.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"gps.json\"\r\nContent-Type: application/json\r\n">, "commit"=>"Save changes"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/poivisited.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:19:50 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:19:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:19:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:19:50 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:19:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:19:50 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__184830752728796232_70235899687320 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:44)
+  Rendered locations/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 23:20:46 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 23:20:48 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1[0m
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1[0m
+  Rendered locations/convex_hull.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 9.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:20:49 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:20:49 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:20:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:20:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:20:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:20:49 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 23:21:39 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1
+  Rendered locations/convex_hull.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 8.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:21:39 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:21:39 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:21:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:21:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:21:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:21:40 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 23:22:21 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1[0m
+  [1m[35mLocation Load (0.4ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1[0m
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1[0m
+  Rendered locations/convex_hull.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 12.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:22:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:22:22 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:22:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:22:22 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:22:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:22:22 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 23:22:24 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1
+  Rendered locations/convex_hull.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:22:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:22:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:22:24 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:22:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:22:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:22:24 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 23:22:54 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1[0m
+  Rendered locations/convex_hull.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:22:54 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:22:54 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:22:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:22:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:22:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:22:54 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 23:23:45 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[35mLocation Load (0.4ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mLocation Load (0.9ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1
+  [1m[36mLocation Load (0.5ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1
+  Rendered locations/convex_hull.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 8.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:23:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:23:45 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:23:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:23:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:23:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:23:45 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 23:23:48 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1[0m
+  Rendered locations/convex_hull.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:23:48 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:23:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:23:48 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:23:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:23:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:23:48 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 23:24:11 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1
+  Rendered locations/convex_hull.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 9.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:11 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:11 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:11 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 23:24:23 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1[0m
+  Rendered locations/convex_hull.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:23 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:23 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:23 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__184830752728796232_70235899687320 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:44)
+  Rendered locations/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 23:24:25 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 23:24:55 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__184830752728796232_70235899687320 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:44)
+  Rendered locations/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 23:24:56 -0700
+
+
+Started GET "/locations/visited" for 127.0.0.1 at 2015-10-25 23:24:58 -0700
+Processing by LocationsController#visited as HTML
+  Rendered locations/visited.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:58 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:24:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:24:58 -0700
+
+
+Started POST "/locations/poivisited" for 127.0.0.1 at 2015-10-25 23:25:08 -0700
+Processing by LocationsController#poivisited as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc222cd77b0 @tempfile=#<Tempfile:/var/folders/t6/86whp61x0td0_wv168y_94800000gn/T/RackMultipart20151025-6259-lix33v>, @original_filename="gps.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"gps.json\"\r\nContent-Type: application/json\r\n">, "commit"=>"Save changes"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/poivisited.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:25:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:25:08 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:25:08 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:25:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:25:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:25:08 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__184830752728796232_70235899687320 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:44)
+  Rendered locations/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 23:25:49 -0700
+
+
+Started GET "/locations/visited" for 127.0.0.1 at 2015-10-25 23:25:51 -0700
+Processing by LocationsController#visited as HTML
+  Rendered locations/visited.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:25:51 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:25:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:25:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:25:51 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:25:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:25:51 -0700
+
+
+Started GET "/locations/visited" for 127.0.0.1 at 2015-10-25 23:26:44 -0700
+Processing by LocationsController#visited as HTML
+  Rendered locations/visited.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:26:44 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:26:44 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:26:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:26:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:26:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:26:44 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__184830752728796232_70235899687320 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:44)
+  Rendered locations/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 23:27:02 -0700
+
+
+Started GET "/locations/radio" for 127.0.0.1 at 2015-10-25 23:27:05 -0700
+Processing by LocationsController#radio as HTML
+  Rendered locations/radio.html.haml within layouts/application (29.7ms)
+Completed 200 OK in 47ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:06 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:06 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__184830752728796232_70235899687320 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:44)
+  Rendered locations/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 23:27:11 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-25 23:27:13 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1
+  Rendered locations/convex_hull.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 17.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:13 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:13 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:13 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__184830752728796232_70235899687320 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:44)
+  Rendered locations/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 23:27:18 -0700
+
+
+Started GET "/locations/radio" for 127.0.0.1 at 2015-10-25 23:27:22 -0700
+Processing by LocationsController#radio as HTML
+  Rendered locations/radio.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:22 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:22 -0700
+
+
+Started POST "/locations/radio" for 127.0.0.1 at 2015-10-25 23:27:37 -0700
+Processing by LocationsController#radio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "latitude"=>"31.825408", "longitude"=>"-116.59421", "radio"=>"1000", "commit"=>"Buscar"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/radio.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:37 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:37 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:37 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.5ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__184830752728796232_70235899687320 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:44)
+  Rendered locations/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 23:27:43 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__184830752728796232_70235890690380 at /Users/alfredo/Documents/rorbueno/analysistool-master/app/views/locations/index.html.haml:44)
+  Rendered locations/index.html.haml within layouts/application (22.8ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-25 23:29:27 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePeople (20151026101955)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151026101955"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSamples (20151026102009)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "samples" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "timestamp" float, "person_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151026102009"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 03:25:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__2639151527978985592_70191690568800 at /Users/alfredo/Desktop/rorbueno2v3/analysistool-master/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (21.7ms)
+Completed 200 OK in 394ms (Views: 383.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:04 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:04 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:04 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:04 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:04 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:25:04 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:25:05 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:25:05 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:25:05 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:25:05 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:25:05 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:25:05 -0700
+
+
+Started GET "/routes/draw" for 127.0.0.1 at 2015-10-26 03:25:12 -0700
+Processing by RoutesController#draw as HTML
+  Rendered routes/draw.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:12 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:12 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:12 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:12 -0700
+
+
+Started POST "/routes/route" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+Processing by RoutesController#route as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "nombre"=>"alfredo", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fad8dac9080 @tempfile=#<Tempfile:/var/folders/t6/86whp61x0td0_wv168y_94800000gn/T/RackMultipart20151026-9859-zpw1q7>, @original_filename="user1_gps.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"user1_gps.json\"\r\nContent-Type: application/json\r\n">, "commit"=>"See"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.9ms)[0m  INSERT INTO "people" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["name", "alfredo"], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people" WHERE "people"."name" = 'alfredo' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.86004684940118], ["longitude", -116.60911602515446], ["person_id", 1], ["timestamp", 1349889014000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.860137973649195], ["longitude", -116.60894436377811], ["person_id", 1], ["timestamp", 1349889074000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.86002862454106], ["longitude", -116.60865468520723], ["person_id", 1], ["timestamp", 1349889134000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.859919275303202], ["longitude", -116.60836500662738], ["person_id", 1], ["timestamp", 1349889194000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.85985548818765], ["longitude", -116.60811824339831], ["person_id", 1], ["timestamp", 1349889254000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.8597279138249], ["longitude", -116.60785002249835], ["person_id", 1], ["timestamp", 1349889314000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.859636789171557], ["longitude", -116.60761398810926], ["person_id", 1], ["timestamp", 1349889374000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.859518326988404], ["longitude", -116.60731358069843], ["person_id", 1], ["timestamp", 1349889434000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.859354302174367], ["longitude", -116.60691661376397], ["person_id", 1], ["timestamp", 1349889494000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.859226727118077], ["longitude", -116.60640162962598], ["person_id", 1], ["timestamp", 1349889554000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.857969192114727], ["longitude", -116.60612267989504], ["person_id", 1], ["timestamp", 1349889614000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.856802767503037], ["longitude", -116.6059295608478], ["person_id", 1], ["timestamp", 1349889674000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.855454070652428], ["longitude", -116.60569352644971], ["person_id", 1], ["timestamp", 1349889734000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.853904867492925], ["longitude", -116.60537166136795], ["person_id", 1], ["timestamp", 1349889794000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.851881751240285], ["longitude", -116.60498542327343], ["person_id", 1], ["timestamp", 1349889854000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.850387168386487], ["longitude", -116.60468501586261], ["person_id", 1], ["timestamp", 1349889914000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.84761665806187], ["longitude", -116.6041700317336], ["person_id", 1], ["timestamp", 1349889974000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.84493720378708], ["longitude", -116.60361213225377], ["person_id", 1], ["timestamp", 1349890034000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.842057159345913], ["longitude", -116.60309714812475], ["person_id", 1], ["timestamp", 1349890094000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.839049422025546], ["longitude", -116.60238904493951], ["person_id", 1], ["timestamp", 1349890154000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.834765505666713], ["longitude", -116.60146636504507], ["person_id", 1], ["timestamp", 1349890214000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.830299083246455], ["longitude", -116.60069388884706], ["person_id", 1], ["timestamp", 1349890274000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.82783790097832], ["longitude", -116.60026473540172], ["person_id", 1], ["timestamp", 1349890334000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.82534018966172], ["longitude", -116.59979266661455], ["person_id", 1], ["timestamp", 1349890394000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (5.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.821420287482574], ["longitude", -116.6004793121289], ["person_id", 1], ["timestamp", 1349890454000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.82236837210513], ["longitude", -116.6036550475956], ["person_id", 1], ["timestamp", 1349890514000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.825486043275614], ["longitude", -116.60421294707542], ["person_id", 1], ["timestamp", 1349890574000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.829095846781073], ["longitude", -116.6049210502517], ["person_id", 1], ["timestamp", 1349890634000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.833872238474576], ["longitude", -116.60588664549695], ["person_id", 1], ["timestamp", 1349890694000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.838885360806294], ["longitude", -116.60687369841312], ["person_id", 1], ["timestamp", 1349890754000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.842786293020563], ["longitude", -116.61168021696855], ["person_id", 1], ["timestamp", 1349890814000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.84858270071726], ["longitude", -116.61412639159705], ["person_id", 1], ["timestamp", 1349890874000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.853102916810414], ["longitude", -116.6163150741476], ["person_id", 1], ["timestamp", 1349890934000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.85897157647595], ["longitude", -116.62099284666849], ["person_id", 1], ["timestamp", 1349890994000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.862434274959572], ["longitude", -116.62532729643668], ["person_id", 1], ["timestamp", 1349891054000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.864156463406204], ["longitude", -116.62443680304415], ["person_id", 1], ["timestamp", 1349891114000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.865213452020615], ["longitude", -116.62290257948807], ["person_id", 1], ["timestamp", 1349891174000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.863755533519157], ["longitude", -116.61921185988336], ["person_id", 1], ["timestamp", 1349891234000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.86242060666595], ["longitude", -116.61553723350717], ["person_id", 1], ["timestamp", 1349891294000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.861035542673743], ["longitude", -116.6118035985606], ["person_id", 1], ["timestamp", 1349891354000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00], ["latitude", 31.86011974880406], ["longitude", -116.60922331348209], ["person_id", 1], ["timestamp", 1349891414000.0], ["updated_at", Mon, 26 Oct 2015 10:25:22 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  Rendered routes/route.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 340ms (Views: 11.8ms | ActiveRecord: 132.2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:25:22 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:25:23 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:25:23 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:25:23 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:25:23 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:25:23 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__2639151527978985592_70191690568800 at /Users/alfredo/Desktop/rorbueno2v3/analysistool-master/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:25:28 -0700
+
+
+Started GET "/routes/users" for 127.0.0.1 at 2015-10-26 03:25:30 -0700
+Processing by RoutesController#users as HTML
+  [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered routes/users.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:30 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:30 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:30 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:30 -0700
+
+
+Started POST "/routes/usersmap" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+Processing by RoutesController#usersmap as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "us_ids"=>["1"], "commit"=>"Map"}
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSample Load (0.3ms)[0m  [1mSELECT "samples".* FROM "samples" WHERE "samples"."person_id" = ?[0m  [["person_id", 1]]
+  Rendered routes/usersmap.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 28ms (Views: 14.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:25:33 -0700
+
+
+Started GET "/routes/users" for 127.0.0.1 at 2015-10-26 03:25:35 -0700
+Processing by RoutesController#users as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people"
+  Rendered routes/users.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:36 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:36 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:36 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:25:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:25:36 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:26:07 -0700
+
+
+Started GET "/routes/users" for 127.0.0.1 at 2015-10-26 03:26:09 -0700
+Processing by RoutesController#users as HTML
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered routes/users.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:09 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:09 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:09 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:09 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__2639151527978985592_70191690568800 at /Users/alfredo/Desktop/rorbueno2v3/analysistool-master/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:26:11 -0700
+
+
+Started GET "/routes/draw" for 127.0.0.1 at 2015-10-26 03:26:14 -0700
+Processing by RoutesController#draw as HTML
+  Rendered routes/draw.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:14 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:14 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:14 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:14 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:14 -0700
+
+
+Started POST "/routes/route" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+Processing by RoutesController#route as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "nombre"=>"rodr", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fad8c502be8 @tempfile=#<Tempfile:/var/folders/t6/86whp61x0td0_wv168y_94800000gn/T/RackMultipart20151026-9859-wr3jf5>, @original_filename="user2_gps.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"user2_gps.json\"\r\nContent-Type: application/json\r\n">, "commit"=>"See"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["name", "rodr"], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."name" = 'rodr' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.870680441020795], ["longitude", -116.59898800391464], ["person_id", 2], ["timestamp", 1349890156000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.870379765053347], ["longitude", -116.60106939811061], ["person_id", 2], ["timestamp", 1349890216000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.870051753787415], ["longitude", -116.60323662299022], ["person_id", 2], ["timestamp", 1349890276000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.869596180649253], ["longitude", -116.6062406970896], ["person_id", 2], ["timestamp", 1349890336000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.869249943558145], ["longitude", -116.60851521033278], ["person_id", 2], ["timestamp", 1349890396000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.86965996102447], ["longitude", -116.6115300132631], ["person_id", 2], ["timestamp", 1349890456000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.87054377024812], ["longitude", -116.61383671301719], ["person_id", 2], ["timestamp", 1349890516000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.871436682298956], ["longitude", -116.61650819319485], ["person_id", 2], ["timestamp", 1349890576000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.87231136326637], ["longitude", -116.61906165617796], ["person_id", 2], ["timestamp", 1349890636000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.871965136376446], ["longitude", -116.61954445380508], ["person_id", 2], ["timestamp", 1349890696000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.87127267869329], ["longitude", -116.6195873691469], ["person_id", 2], ["timestamp", 1349890756000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.870315985176305], ["longitude", -116.62005943793407], ["person_id", 2], ["timestamp", 1349890816000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.868666804463697], ["longitude", -116.62092847365572], ["person_id", 2], ["timestamp", 1349890876000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.867190717141252], ["longitude", -116.62160439033009], ["person_id", 2], ["timestamp", 1349890936000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.866179310327468], ["longitude", -116.62218374747188], ["person_id", 2], ["timestamp", 1349890996000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.866534670742965], ["longitude", -116.62328881759159], ["person_id", 2], ["timestamp", 1349891056000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.865514144841494], ["longitude", -116.62378234404967], ["person_id", 2], ["timestamp", 1349891116000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.86531368306864], ["longitude", -116.62316007155708], ["person_id", 2], ["timestamp", 1349891176000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.864593839473105], ["longitude", -116.62132544059018], ["person_id", 2], ["timestamp", 1349891236000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.865659934947242], ["longitude", -116.62077826995029], ["person_id", 2], ["timestamp", 1349891296000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.864876310415085], ["longitude", -116.61871833342528], ["person_id", 2], ["timestamp", 1349891356000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.863937774591065], ["longitude", -116.61617559928212], ["person_id", 2], ["timestamp", 1349891416000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.8641929114892], ["longitude", -116.61445898550978], ["person_id", 2], ["timestamp", 1349891476000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.86606996838476], ["longitude", -116.61353630560635], ["person_id", 2], ["timestamp", 1349891536000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.86732739288646], ["longitude", -116.61190552252667], ["person_id", 2], ["timestamp", 1349891596000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.86663490035577], ["longitude", -116.60997433203613], ["person_id", 2], ["timestamp", 1349891656000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.865869507821486], ["longitude", -116.6078071071565], ["person_id", 2], ["timestamp", 1349891716000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.867546073657213], ["longitude", -116.60810751456734], ["person_id", 2], ["timestamp", 1349891776000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.868165666356433], ["longitude", -116.6059617473497], ["person_id", 2], ["timestamp", 1349891836000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.868584800232647], ["longitude", -116.60291475790848], ["person_id", 2], ["timestamp", 1349891896000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "samples" ("created_at", "latitude", "longitude", "person_id", "timestamp", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00], ["latitude", 31.869131493727988], ["longitude", -116.59973902244175], ["person_id", 2], ["timestamp", 1349891956000.0], ["updated_at", Mon, 26 Oct 2015 10:26:25 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  Rendered routes/route.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 157ms (Views: 8.6ms | ActiveRecord: 83.9ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:26:25 -0700
+
+
+Started GET "/routes/draw" for 127.0.0.1 at 2015-10-26 03:26:29 -0700
+Processing by RoutesController#draw as HTML
+  Rendered routes/draw.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:29 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:29 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:29 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:29 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:29 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 03:26:30 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__2639151527978985592_70191690568800 at /Users/alfredo/Desktop/rorbueno2v3/analysistool-master/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:30 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:30 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:31 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:31 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:26:31 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:26:31 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:26:31 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:26:31 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:26:31 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:26:31 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:26:31 -0700
+
+
+Started GET "/routes/users" for 127.0.0.1 at 2015-10-26 03:26:33 -0700
+Processing by RoutesController#users as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered routes/users.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:33 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:33 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:33 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:33 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:33 -0700
+
+
+Started POST "/routes/usersmap" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+Processing by RoutesController#usersmap as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "us_ids"=>["2"], "commit"=>"Map"}
+  [1m[35mPerson Load (0.1ms)[0m  SELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSample Load (0.2ms)[0m  [1mSELECT "samples".* FROM "samples" WHERE "samples"."person_id" = ?[0m  [["person_id", 2]]
+  Rendered routes/usersmap.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 29ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:26:36 -0700
+
+
+Started GET "/routes/users" for 127.0.0.1 at 2015-10-26 03:33:43 -0700
+Processing by RoutesController#users as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people"
+  Rendered routes/users.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:33:43 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:33:43 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:33:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:33:43 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:33:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:33:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:33:43 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:33:43 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__2639151527978985592_70191678457060 at /Users/alfredo/Desktop/rorbueno2v3/analysistool-master/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (15.6ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:33:45 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (1.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__2639151527978985592_70191678457060 at /Users/alfredo/Desktop/rorbueno2v3/analysistool-master/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (19.1ms)
+Completed 200 OK in 59ms (Views: 38.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:36:00 -0700
+
+
+Started GET "/locations/convex_hull" for 127.0.0.1 at 2015-10-26 03:36:11 -0700
+Processing by LocationsController#convex_hull as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'alfredo_house' LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations"
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.817894, -116.596892, 10) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.871267, -116.662703, 2) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.87385, -116.62773, 12) LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.872079, -116.619798, 3) LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" IN (31.825408, -116.59421, 1) LIMIT 1[0m
+  Rendered locations/convex_hull.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 9.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:36:12 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:36:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:36:12 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:36:12 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:36:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:36:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:36:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:36:12 -0700
+
+
+Started GET "/routes/users" for 127.0.0.1 at 2015-10-26 03:38:25 -0700
+Processing by RoutesController#users as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people"
+  Rendered routes/users.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:25 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:25 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:25 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:25 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__2639151527978985592_70191678457060 at /Users/alfredo/Desktop/rorbueno2v3/analysistool-master/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:38:30 -0700
+
+
+Started GET "/routes/users" for 127.0.0.1 at 2015-10-26 03:38:34 -0700
+Processing by RoutesController#users as HTML
+  [1m[35mPerson Load (0.1ms)[0m  SELECT "people".* FROM "people"
+  Rendered routes/users.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:34 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:34 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:34 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:34 -0700
+
+
+Started POST "/routes/usersmap" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+Processing by RoutesController#usersmap as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AEEMnweiv8kPwE0uzqw+6mX+owmbrXlUhkqOtWBBnYU=", "us_ids"=>["1"], "commit"=>"Map"}
+  [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSample Load (0.2ms)[0m  SELECT "samples".* FROM "samples" WHERE "samples"."person_id" = ?  [["person_id", 1]]
+  Rendered routes/usersmap.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:38:37 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.5ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__2639151527978985592_70191678457060 at /Users/alfredo/Desktop/rorbueno2v3/analysistool-master/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:38:40 -0700
+
+
+Started GET "/routes/draw" for 127.0.0.1 at 2015-10-26 03:38:42 -0700
+Processing by RoutesController#draw as HTML
+  Rendered routes/draw.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:42 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:42 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:42 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:42 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__2639151527978985592_70191678457060 at /Users/alfredo/Desktop/rorbueno2v3/analysistool-master/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:38:46 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (2.3ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__2639151527978985592_70191678457060 at /Users/alfredo/Desktop/rorbueno2v3/analysistool-master/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (20.6ms)
+Completed 200 OK in 61ms (Views: 36.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 03:56:20 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 03:56:21 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 03:56:21 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 03:56:21 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 03:56:21 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 03:56:21 -0700
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/alfredo/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 04:33:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__1490761774676548093_70152814126300 at /Users/alfredo/Desktop/rorbueno2v3/analysistoolmaster/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (19.4ms)
+Completed 200 OK in 315ms (Views: 303.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 04:33:06 -0700
+
+
+Started GET "/routes/users" for 127.0.0.1 at 2015-10-26 04:33:11 -0700
+Processing by RoutesController#users as HTML
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered routes/users.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 35ms (Views: 24.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:11 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:11 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:11 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:11 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:11 -0700
+
+
+Started POST "/routes/usersmap" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+Processing by RoutesController#usersmap as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nbMLNL8bVYUWGkxuFpKwC+A5HYbT8DMKtl2VBte3o4M=", "us_ids"=>["2"], "commit"=>"Map"}
+  [1m[35mPerson Load (12.7ms)[0m  SELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSample Load (0.3ms)[0m  [1mSELECT "samples".* FROM "samples" WHERE "samples"."person_id" = ?[0m  [["person_id", 2]]
+  Rendered routes/usersmap.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 138ms (Views: 17.1ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 04:33:14 -0700
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_locations_index_html_haml__1490761774676548093_70152814126300 at /Users/alfredo/Desktop/rorbueno2v3/analysistoolmaster/app/views/locations/index.html.haml:46)
+  Rendered locations/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+
+
+Started GET "/assets/routes.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+
+
+Started GET "/assets/maps/OpenLayers.js" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+
+
+Started GET "/assets/maps/locations.js" for 127.0.0.1 at 2015-10-26 04:33:18 -0700
+
+
+Started GET "/assets/maps/theme/default/style.css" for 127.0.0.1 at 2015-10-26 04:33:19 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-maximize.png" for 127.0.0.1 at 2015-10-26 04:33:19 -0700
+
+
+Started GET "/assets/maps/img/layer-switcher-minimize.png" for 127.0.0.1 at 2015-10-26 04:33:19 -0700
+
+
+Started GET "/assets/maps/icons/balloon-shadow.png" for 127.0.0.1 at 2015-10-26 04:33:19 -0700
+
+
+Started GET "/assets/maps/icons/blue-dot.png" for 127.0.0.1 at 2015-10-26 04:33:19 -0700
