@@ -1,0 +1,17 @@
+<h1>Calcular el casco convexo</h1>
+ <h2>Puntos dentro del casco convexo</h2>
+<table>
+  <tr>
+    <th>lugar</th>
+  </tr>
+  <%@convex_locations.each do |location|%>
+      <tr>
+        <td><%=location["name"]%></td>
+      </tr>
+  <%end%>
+
+</table>
+
+ <h2>El perimetro del casco convexo es de <%= @perimeter %> m </h2> 
+<h2> El lugar mas alejado de mi casa es: <%= @aux_distancia_mas_larga.last %> </h2>
+<h2><%=link_to 'Back to location list', locations_path%></h2>

@@ -1,0 +1,16 @@
+<h2>Select the users</h2>
+
+<%= form_tag routes_usersmap_path, method: :post do %>
+
+    <% @users.each do |us| %>
+    <%= check_box_tag 'us_ids[]', us.id %>
+        <%= us.name %><br/><br/>
+    <% end %>
+    
+    <br/>
+
+   <%= submit_tag 'Map' %>
+   
+   <% end %>
+   <br/>
+   <%= link_to 'Back to location list', locations_path %>

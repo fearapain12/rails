@@ -1,0 +1,33 @@
+%h1.title Lugares Cercanos
+
+
+= form_tag radio_locations_path,  method: :post do
+
+  = label :latitude, 'Latitud'
+  %input{:name => 'latitude'}
+
+  = label  :longitude, 'Longitud'
+  %input{:name => 'longitude'}
+
+  = label :radio, :radio, 'Radio'
+  %input{:name => 'radio'}
+  =submit_tag 'Buscar'
+
+
+%table#table
+  %thead
+    %tr
+      %th Name
+      %th Latitude
+      %th Longitude
+      %th Description
+  -for i in 0..@aux1.length
+    %tr
+      %td=@aux1[i]
+      %td=@aux2[i]
+      %td=@aux3[i]
+      %td=@aux4[i]
+
+
+%p
+  = link_to 'Back to location list', locations_path

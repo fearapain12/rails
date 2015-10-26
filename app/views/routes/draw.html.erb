@@ -1,0 +1,10 @@
+<h1>User's route</h1>
+
+<%= form_tag routes_route_path, :multipart => true do %>
+    <%= label_tag :nombre, 'Usuario' %>
+  <%= text_field_tag :nombre,nil,:required => true %>
+   <label for="file">Upload json</label> <%= file_field_tag "file" %>
+   <%= submit_tag 'See' %>
+<% end %>
+<br/>
+<%= link_to 'Back to location list', locations_path %>

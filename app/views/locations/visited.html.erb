@@ -1,0 +1,7 @@
+<h1>Puntos visitados</h1>
+
+<%= form_tag locations_poivisited_path, :multipart => true do %>
+    <label for="file">Subir un archivo</label> <%= file_field_tag "file" %>
+    <%= submit_tag %>
+<% end %>
+<h2><%=link_to 'Back to location list', locations_path%></h2>

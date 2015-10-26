@@ -1,0 +1,13 @@
+<h1>Lista de lugares</h1>
+<table>
+  <tr>
+    <th>lugar</th>
+  </tr>
+  <%@visitedplaces.each do |places|%>
+      <tr>
+        <td><%=places%></td>
+      </tr>
+  <%end%>
+
+</table>
+<h2><%=link_to 'Back to location list', locations_path%></h2>

@@ -1,0 +1,22 @@
+<h1 class="title">All Locations of Interest</h1>
+<div class="map">
+  <div id="map"></div>
+</div>
+<input id="locations" type="hidden" value="<%= @puntos %>"></input>
+
+
+<% flash.each do |key, value| %>
+  <div class="alert-<%= key %> alert">
+    <%= value %>
+  </div>
+<% end %>
+<p>
+  <%= link_to 'Back to location list', locations_path %>
+</p>
+<%= javascript_include_tag '/assets/maps/OpenLayers' %>
+<%= javascript_include_tag '/assets/maps/locations' %>
+<script>
+  
+  initMap($("#locations").val());
+
+</script>
